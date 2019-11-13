@@ -7,6 +7,10 @@
 		<artifactId>ZacharyChao-springcloud</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<properties>
+		<java.version>1.8</java.version>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+	</properties>
 	<artifactId>ZacharyChao-registry</artifactId>
 	<dependencies>
 		<dependency>
