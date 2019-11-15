@@ -35,10 +35,10 @@
 			</plugin>
 		</plugins>
 	</build>
-
 	<modules>
 		<module>ZacharyChao-registry</module>
 		<module>ZacharyChao-client</module>
 		<module>ZacharyChao-gateway</module>
+		<module>ZacharyChao-member</module>
 	</modules>
 </project>
