@@ -40,5 +40,6 @@
 		<module>ZacharyChao-client</module>
 		<module>ZacharyChao-gateway</module>
 		<module>ZacharyChao-member</module>
+		<module>ZacharyChao-config</module>
 	</modules>
 </project>
