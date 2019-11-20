@@ -3,6 +3,6 @@ spring:
     name: config  cloud:    config:      server:        git:          uri: https://github.com/ZacharyChao/config
           username: ZacharyChao
           password: 5917499627zlmm
+server:  port: 8002
 eureka:  client:    serviceUrl:
       defaultZone: http://localhost:8761/eureka
-server:  port: 8002

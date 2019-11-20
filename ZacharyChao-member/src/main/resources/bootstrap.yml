@@ -1,6 +1,9 @@
 spring:
-  application:
-    name: member  cloud:    config:      discovery:        enabled: true
-        service-id: config      profile: dev
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      profile: dev  application:    name: member
 eureka:  client:    serviceUrl:
       defaultZone: http://localhost:8761/eureka

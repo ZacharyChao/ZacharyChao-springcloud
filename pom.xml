@@ -41,5 +41,6 @@
 		<module>ZacharyChao-gateway</module>
 		<module>ZacharyChao-member</module>
 		<module>ZacharyChao-config</module>
+		<module>ZhcharyChao-book</module>
 	</modules>
 </project>
