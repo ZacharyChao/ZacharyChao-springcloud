@@ -26,4 +26,9 @@ public class MemberController {
 			return new MemberMessage("500", new MemberException().getLocalizedMessage());
 		}
 	}
+	
+	@GetMapping("/test")
+	public String test() {
+		return null;
+	}
 }

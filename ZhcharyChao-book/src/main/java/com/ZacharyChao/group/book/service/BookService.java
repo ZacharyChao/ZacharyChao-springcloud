@@ -6,4 +6,6 @@ import com.ZacharyChao.group.book.entity.Book;
 
 public interface BookService {
 	List<Book> getAll();
+
+	Book getInfo(String bid);
 }
