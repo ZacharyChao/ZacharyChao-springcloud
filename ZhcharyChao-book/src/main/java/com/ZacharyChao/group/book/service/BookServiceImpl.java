@@ -19,7 +19,7 @@ public class BookServiceImpl implements BookService{
 	@Override
 	public Book getInfo(String bid) {
 		
-		return bookRepository.findById();
+		return bookRepository.findById(Long.valueOf(bid)).get();
 	}
 
 }
