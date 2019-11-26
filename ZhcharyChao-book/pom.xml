@@ -10,7 +10,7 @@
 	<artifactId>ZhcharyChao-book</artifactId>
 	<properties>
 		<java.version>1.8</java.version>
-		<maven-jar-plugin>3.1.1</maven-jar-plugin>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client -->
