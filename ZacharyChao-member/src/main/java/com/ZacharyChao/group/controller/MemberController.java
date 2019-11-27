@@ -9,9 +9,11 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.ZacharyChao.group.client.BookClient;
 import com.ZacharyChao.group.entity.Member;
 import com.ZacharyChao.group.service.MemberService;
 import com.ZacharyChao.group.util.MemberException;
@@ -25,6 +27,8 @@ public class MemberController {
 	private RestTemplate restTemplate;
 	@Autowired
 	private MemberService memberService;
+	@Autowired
+	private BookClient bookClient;
 
 	@GetMapping("/api/v1/members/{mobile}")
 	public MemberMessage checkMember(@PathVariable String mobile) {
@@ -52,7 +56,12 @@ public class MemberController {
 //		Integer port = serviceInstance.getPort();
 //		String json = restTemplate.getForObject("http://" + host + ":" + port + "/api/v1/books/" + bid, String.class);
 //		3.使用注解简化开发
-		String json = restTemplate.getForObject("http://book/api/v1/books/"+ bid, String.class);
+		String json = restTemplate.getForObject("http://book/api/v1/book?bid="+ bid, String.class);
 		return json;
+	}
+	
+	@GetMapping("/api/v1/test")
+	public String getInfo(@RequestParam("bid") String bid) {
+		return bookClient.getInfo(bid);
 	}
 }
