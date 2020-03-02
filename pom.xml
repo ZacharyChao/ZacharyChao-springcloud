@@ -8,6 +8,7 @@
 	<packaging>pom</packaging>
 	<properties>
 		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
 
 	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
@@ -42,5 +43,6 @@
 		<module>ZacharyChao-member</module>
 		<module>ZacharyChao-config</module>
 		<module>ZhcharyChao-book</module>
+		<module>ZacharyChao-registry2</module>
 	</modules>
 </project>
