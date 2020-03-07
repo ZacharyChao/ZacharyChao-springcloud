@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ClientController {
 	@GetMapping("/msg")
-	@ResponseBody
 	public String msg() {
 		return "I'm client message";
 	}

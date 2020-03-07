@@ -44,5 +44,7 @@
 		<module>ZacharyChao-config</module>
 		<module>ZhcharyChao-book</module>
 		<module>ZacharyChao-registry2</module>
+		<module>ZacharyChao-hystrix</module>
+		<module>Zacharychao-Feign</module>
 	</modules>
 </project>
